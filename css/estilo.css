@@ -7,11 +7,12 @@
 
 .topo {
     background-color: red;
-    width: 100%;
+    width: 90%;
     height: 60px;
 }
 .menu {
-   width: 1200px;
+    width:95% ;
+   max-width: 1200px;
    height: 60px;
    /*background-color: black;*/
    margin: auto;
@@ -42,7 +43,7 @@
 }
 /* fim do topo */
 .banner{
-    width: 100%;
+    width: 90%;
     height: 740px;
     background-image: url("../imagens/imagem-fundo-banner.jpg");
     background-size: cover;
@@ -50,7 +51,8 @@
 }
 
 .content{
-    width: 1200px;
+    width: 95%;
+    max-width: 1200px;
     height: 100%;
     /* background-color: rgba(167, 165, 165, 0.247);  */
     margin: auto;
@@ -86,7 +88,7 @@
     margin-left: 15px;
 }
 .sobre{
-    width: 100%;
+    width: 90%;
     height: 800px;
     background-color: #080324;
 }
@@ -100,12 +102,16 @@
 .artigo-sobre{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .artigo-sobre img{
-    width: 500px;
+    width: 45%;
+    max-width: 500px;
+    min-width: 450px;
 }
 .artigo-text-sobre{
-    width: 600px;
+    width: 90%;
+    max-width: 600px;
     color: white;
 }
 .artigo-text-sobre h3:nth-child(1){
@@ -126,7 +132,7 @@
 }
  /* fim do sobre */
  .info{
-     width: 100%;
+     width: 90%;
      height: 200px;
      background-image: url("../imagens/imagem-fundo-info.jpg");
      background-size: cover;
@@ -138,8 +144,8 @@
      font-size: 24px;
  }
  .info p{
-     width:250px;
-     color: #A259F7;
+    width:250px;
+    color: #A259F7;
     font-size:28px ;
     border: solid 1px #A259F7;
     text-align: center;
@@ -202,5 +208,57 @@
       color: #ffff;
       font-size: 18px;
       font-family: 'Open Sans', sans-serif; 
-   
+
+  }
+
+  @media screen and (max-width: 1199px){
+    .sobre{
+        height: auto;
+        padding-bottom: 4em;
+    }
+    .sobre .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .artigo-sobre{
+        justify-content: center;
+    }
+    .artigo-sobre img{
+        width: 100%;
+        max-width: 800px;
+        min-width: 600px;
+        margin-bottom: 2em;
+    }
+    .artigo-text-sobre{
+        width: 800px;
+    }
+  }
+  @media screen and (max-width: 991px){
+    .artigo-sobre img{
+        max-width: 700px;
+    }
+    .artigo-text-sobre{
+        width: 90%;
+    }
+    .info-card{
+        text-align: center;
+    }
+    .info p{
+        width: 220px;
+    }
+    .end-text{
+        width: 700px;
+        height: auto;
+        flex-direction: column;
+        padding: 2em 0;
+    }
+    .endereço{
+        height: auto;
+        padding-bottom: 2em;
+    }
+    .end-text img{
+        position: unset;
+    } 
+
   }
