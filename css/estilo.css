@@ -259,6 +259,7 @@
     }
     .end-text img{
         position: unset;
+        margin-top: 2em;
     } 
 
   }
