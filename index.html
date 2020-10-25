@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>index</title>
         <link rel="stylesheet" href="css/estilo.css">
+        <script src="https://kit.fontawesome.com/30f36b8c31.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="topo"> 
             <nav class="menu">
-                <ul>
+                <ul id="meuslinks">
                     <li><a href="#">inicio</a></li>
                     <li><a href="#">sobre</a></li>
                     <li><a href="#">desafios</a></li>
                     <li><a href="#">endereço</a></li>
                 </ul>
+                <a href="#" class="menubotao" onclick="myFunction()">
+                    <i class="fas fa-bars"></i>
+                </a>
             </nav>
         </header>
         <!-- fim do topo  -->
@@ -78,5 +84,16 @@
                     <p>Copyright © 2020 - Escola Senai de Informática</p>
                 </div>
                 </footer>
+                <script>
+                    function myFunction() {
+                      var uldomenu = document.getElementById("meuslinks");
+                      if (uldomenu.style.display === "flex") { 
+                        uldomenu.style.display = "none";
+                      } else {
+                        uldomenu.style.display = "flex";
+                      }
+                    }
+                    </script>
+
     </body>
 </html>
