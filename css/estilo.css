@@ -157,9 +157,9 @@
 .info-flex{
      display: flex;
      justify-content:space-between;
-    align-items: center;
+     align-items: center;
  }
-  /* fim do sobre  */
+  /* fim do local */
 
   .endereço{
       width: 100%;
@@ -201,7 +201,7 @@
       right: 20px;
       top:-80px ;
   }
-
+    /* fim  do endereço  */
   .rodape{
       width: 100%;
       height: 100px;
@@ -268,7 +268,7 @@
 
   }
   /* responsivo  de 576 ate 767 */
-  @media screen and (max-width:767px){
+  @media screen and (max-width: 767px){
       .topo{
           width: 100%;
           max-width: 1200px;
@@ -289,29 +289,41 @@
         .menubotao{
             display: flex;
         }
-        .banner-text{
-            padding-bottom: 50px;
-            width: 100%;
-            max-width: 1200px;
+        /* . */
+        .banner-text h1{
+            font-size: 68px;
+            border-bottom: solid 2px yellow;
+            width: 400px;
+        }
+        .banner-text p{
+            font-size: 36px;
+        }
+        .sobre{
             height: auto;
+            width: 100%;
+        }
+        .artigo-sobre img{
+            min-width: 500px;
+        }
+        .info{
+            height: 600px;
+        }
+        .info-flex{
+            display: flex;
+            justify-content: space-around;
             flex-direction: column;
         }
-        .banner-text h1 {
-            font-size: 70px;
+        /* .  */
+        .endereço{
+            width: 100%;
+            height: 800px;
         }
-            .banner-text p{
-                font-size: 35px;
-            }
-            .alinhamento-abaixo{
-                width: 400px; 
-            }
-            .banner-text .ponto{
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-            .artigo-text-sobre img{
-                max-width: 200px;
-                min-width: 100px;
-            }
+        .endereço h2{
+            padding-bottom: 70px;
+            text-align: center;
         }
+        .end-text{
+            width: 100%;
+            height: auto;
+        }
+    }
