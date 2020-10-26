@@ -327,3 +327,38 @@
             height: auto;
         }
     }
+        /* responsivo de 375 ate 575 */
+    @media screen and (max-width: 575px) {
+        .alinhamento-abaixo{
+            height: 900px;
+        }
+        .banner-text h1{
+            font-size: 50px;
+            border-bottom: solid 2px yellow;
+            width: 340px;
+            justify-content: space-between;
+        }
+        .banner-text p{
+            font-size: 30px;
+        }
+        .banner-text .mouse{
+            display: flex;
+            justify-content: center;
+        }
+        .sobre h2{
+            font-size: 40px;
+        }
+        .artigo-sobre img{
+            min-width: 340px;
+        }
+        .artigo-text-sobre h3:nth-child(2){
+            font-size: 30px;
+            width: 280px;
+        }
+        .end-text{
+            width: 99%;
+        }
+        .rodape p{
+            font-size: 12px;
+        }
+    }
